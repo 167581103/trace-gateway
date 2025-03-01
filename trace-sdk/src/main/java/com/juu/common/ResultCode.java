@@ -2,7 +2,6 @@ package com.juu.common;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 
 @AllArgsConstructor
@@ -15,4 +14,12 @@ public enum ResultCode {
 
     private Integer code;
     private String msg;
+
+    public Integer code(){
+        return code;
+    }
+
+    public String message(){
+        return msg;
+    }
 }

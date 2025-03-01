@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: backend
+  cloud:
+    nacos:
+      server-addr: http://localhost:8848
+
