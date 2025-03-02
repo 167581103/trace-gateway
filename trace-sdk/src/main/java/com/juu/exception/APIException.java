@@ -1,11 +1,19 @@
 package com.juu.exception;
 
+import com.juu.common.ResultCode;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @Data
-public class APIException extends BusinessException{
+@RequiredArgsConstructor
+@AllArgsConstructor
+@Builder
+public class APIException extends RuntimeException {
+    private final ResultCode resultCode;
+    private final Object data;
     private String appCode;
-    private String path;
     private String msg;
-    private Object data;
+    private String path;
 }

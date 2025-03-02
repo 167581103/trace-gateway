@@ -2,6 +2,8 @@ package com.juu.common;
 
 import com.juu.exception.APIException;
 import com.juu.util.PropertyUtils;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
@@ -9,6 +11,8 @@ import java.io.Serializable;
 
 @Data
 @Slf4j
+@Builder
+@AllArgsConstructor
 public class ApiResult<T> implements Serializable {
     private static final long serialVersionUID = 0xc93480e15321b2c5L;
 
